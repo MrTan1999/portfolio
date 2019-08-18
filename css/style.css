@@ -1,0 +1,342 @@
+/*Used for setting initial margin*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Special Elite', cursive;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/*Giving structure to navigation bar*/
+#header {
+	padding: 1em;
+	background-color: rgba(90,90,90,0.9);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+}
+
+#links {
+	margin-right: 2em;
+}
+
+#links ul li {
+	display: inline-block;
+}
+
+/*Giving an animation to links*/
+#links ul li a {
+	padding: 1em;
+	color:black;
+	border-bottom: 0em solid white;
+	transition: border 150ms, padding 150ms;
+}
+
+#links ul li a:hover {
+	border-bottom: 0.2em solid white;
+	padding-bottom: 0.4em;
+}
+
+/*setting background*/
+#main {
+	background: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 120vh;
+	padding: 4.5em 1.5em;
+}
+
+/*setting profile card*/
+#profileCard {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	width:70%;
+	padding: 3em 3em;
+	background-color: rgba(0,0,100,0.3);
+	border-radius: 0.25em;
+	box-shadow: 0.25em 0.25em 1em black;
+}
+
+#profileCard img {
+	height: 15em;
+	border-radius: 0.25em;
+	box-shadow: 0.25em 0.25em 1em black;
+	transition: all 1s;
+}
+
+#profileCard img:hover {
+	transform: scale(1.1);
+}
+
+#socialLinks ul li {
+	display: inline-block;
+}
+
+#socialLinks ul li a {
+	padding: 1em;
+	color:black;
+	border-bottom: 0em solid white;
+	transition: border 150ms, padding 150ms;
+}
+
+#socialLinks ul li a:hover {
+	border-bottom: 0.2em solid white;
+	padding-bottom: 0.2em;
+}
+
+/*adjusting the information on profile card*/
+#info {
+	width:70%;
+	padding: 2em;
+}
+
+#info p {
+	padding: 10px 0px;
+}
+
+#socialLinks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/*Project Section*/
+#projects {
+	background: url("../images/background2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	padding: 4.5em 1.5em;
+	display: flex;
+	flex-direction: column;
+	padding: 5em;
+}
+
+#projects h1 {
+	margin-top: 1em;
+	margin-bottom: 2em; 
+	border-bottom: 0.1em solid black;
+	color:blue;
+}
+
+.proj {
+	display:flex;
+	margin:auto;
+	margin-bottom: 2em;
+	border: 0.1em solid black;
+	background-color: rgba(240,240,240,0.6);
+}
+
+.projInfo {
+	padding:2em;
+}
+
+.projInfo h2 {
+	border-bottom: 0.05em double black;
+	margin-bottom: 1em;
+}
+
+.proj img {
+	width:40%;
+	align-self: flex-start;
+	transition: all 0.4s;
+}
+
+.proj img:hover {
+	transform: scale(1.1);
+}
+
+/*Gallery section*/
+
+#gallery {
+	background: rgba(100,255,0,0.2);
+}
+
+#gallery h1 {
+	padding: 0.5em;
+	margin: 0.5em;
+	text-align: center;
+	border-bottom: 0.05em solid black;
+	border-right: 0.05em solid black;
+	box-shadow: 0.1em 0.1em 0.2em black;
+	width:40%;
+}
+
+#images img {
+	width: 350px;
+	height: 300px;
+	margin:1em;
+	box-shadow: 0.5em 0.5em 1em black;
+	transition: all 0.4s;
+}
+
+#images img:hover {
+	transform: scale(1.1);
+}
+
+#images {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/*Contact section*/
+#contact {
+	background: url("../images/background3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	padding: 4.5em 1.5em;
+	display: flex;
+	flex-direction: column;
+	padding: 5em;
+}
+
+#details {
+	margin: 2em 2em;
+	text-align: center;
+	line-height: 1.6;
+	text-align: center;
+	border: 0.05em solid black;
+	border-radius: 0.2em;
+}
+
+#contact h1 {
+	font-size: 3em;
+	text-align: center;
+	color: blue;
+	border-bottom: 0.05em solid black;
+	margin-bottom: 0.2em;
+}
+
+#form {
+	margin: 2em 2em;
+	/*text-align: center;*/
+	padding: 1em;
+	border: 0.05em solid black;
+	border-radius: 0.2em;
+}
+
+input[type=text]  {
+	width: 100%;
+ 	padding: 1em;
+ 	margin: 1em;
+ 	display: inline-block;
+ 	border: 0.1em solid #ccc;
+  	border-radius: 0.2em;
+  	box-sizing: border-box;
+}
+
+input[type=email]  {
+	width: 100%;
+ 	padding: 1em;
+ 	margin: 1em;
+ 	display: inline-block;
+ 	border: 0.1em solid #ccc;
+  	border-radius: 0.2em;
+  	box-sizing: border-box;
+}
+
+input[type=submit] {
+	float:left;
+	background-color: #4CAF50;
+	color: white;
+	padding: 1em 1em;
+	margin: 1em 0.5em;
+	border: none;
+	border-radius: 0.2em;
+	cursor: pointer;
+}
+
+input[type=reset] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 1em 1em;
+	margin: 1em 0.5em;
+	border: none;
+	border-radius: 0.2em;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+#form label {
+	color: grey;
+	opacity: 10;
+}
+
+footer {
+	text-align: center;
+}
+
+footer span {
+	font-size: 2em;
+}
+
+/*For making responsive*/
+@media only screen and (max-width: 640px) {
+	#header h2,#links {
+		margin: auto;
+	}
+
+	#profileCard {
+		width: 90%;
+		padding: 1em;
+	}
+
+	#info {
+		width: 100%;
+	}
+
+	#projects {
+		padding: 1em;
+	}
+
+	.proj {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.proj2 {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap-reverse;
+	}
+
+	.proj img {
+		width: 100%;
+		margin: auto; 
+	}
+
+	#details {
+		margin: 1em 0.1em;
+	}
+
+ 	#form {
+		margin: 1em 0.1em;
+	}
+}
+
+@media only screen and (max-width: 510px) {
+
+	#links ul li a {
+		padding: 0.5em 0.5em;
+	}
+
+	#details #email {
+		display: none;
+	}
+}
